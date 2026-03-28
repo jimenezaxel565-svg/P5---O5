@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalo de confianza - Diferencia de medias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Intervalo de confianza al 90% para la diferencia de producción media</h1>
+        <p class="descripcion">
+            Comparación entre cámaras <strong>con dióxido de azufre</strong> y <strong>sin dióxido de azufre</strong>.
+            Datos en kg de cosecha de habichuelas.
+        </p>
+        <div id="grafico_datos" class="grafico"></div>
+        <div id="grafico_diferencia" class="grafico" style="height: 300px;"></div>
+        <div class="resultado">
+            <p><strong>Intervalo de confianza (90%) para \(\mu_1 - \mu_2\):</strong>  
+            \[
+            (0.0523 \text{ kg}, \; 0.7577 \text{ kg})
+            \]</p>
+            <p><strong>Interpretación:</strong> Con un 90% de confianza, la producción media con dióxido de azufre es entre 0.0523 kg y 0.7577 kg mayor que la producción sin tratamiento.</p>
+            <p><em>Nota:</em> Los intervalos individuales de cada grupo se construyeron usando la varianza agrupada para mantener coherencia con el modelo de varianzas iguales.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
